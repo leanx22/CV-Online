@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cv-online-4e720": {
+      "hosting": {
+        "cv-online": [
+          "guia-leandro-cv"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cv-online-4e720"
+  }
+}

@@ -1,0 +1,25 @@
+<nav class="mb-6">
+  <div class="flex justify-between py-3 px-32">
+    <button class="p-2 rounded-md bg-white font-semibold shadow-md">
+      <div class="flex justify-center items-center">
+        <img src="../../../assets/Icons/light_mode/pdfx64.png" height="24" width="24" class="me-2">
+        Ver como PDF
+      </div>      
+    </button>    
+    
+    <div class="bg-white shadow-md flex p-1 rounded-md">
+      @for(folder of this.getUserFolders; track folder){
+        <a 
+          routerLink="/{{folder.folderName.toLowerCase()}}"
+          [ngClass]="{'bg-black text-white':this.getCurrentRoute == folder.folderName.toLowerCase()}"
+          class="font-semibold rounded-md p-2">{{folder.folderName.toUpperCase()}}
+        </a>
+      }
+    </div>
+
+    <div class="bg-white shadow-md flex p-1 rounded-md">
+      <button class="bg-black text-white font-semibold rounded-s-md p-2">ENG</button>
+      <button class="text-black font-semibold rounded-e-md p-2">ESP</button>
+    </div>
+  </div>
+</nav>

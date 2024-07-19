@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "cv-online",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}
